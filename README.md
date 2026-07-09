@@ -1,6 +1,6 @@
-# shiipiit — site vitrine
+# cameroon.shiipiit — site vitrine
 
-Site vitrine one-page de **shiipiit** : sourcing tech & électroménager depuis la Chine vers le Cameroun (panneaux solaires, électroménager, téléphones, composants), avec service après-vente. Bilingue **FR / EN**.
+Site vitrine one-page de **cameroon.shiipiit** : sourcing tech & électroménager depuis la Chine vers le Cameroun (panneaux solaires, électroménager, téléphones, composants), avec service après-vente. Bilingue **FR / EN**.
 
 ## Fichiers
 
@@ -18,22 +18,13 @@ Hero · Le sourcing (processus en 3 étapes) · Réassurance · SAV · L'équipe
 
 Le contenu existe en français et en anglais via les attributs `data-fr` / `data-en` (et `data-fr-html` / `data-en-html` pour le titre). Le bouton **EN / FR** du header bascule toute la page ; le choix est mémorisé (`localStorage`).
 
-## Images d'illustration (placeholders)
+## Images
 
-Des emplacements d'images sont marqués par un cadre pointillé (classe `.img-ph`) :
+Les images (hero, 3 cartes du processus, 3 fondateurs) sont hébergées sur **Cloudflare Images** et référencées par URL directement dans `index.html` (`https://imagedelivery.net/…/w=800`). Elles ne sont donc **pas versionnées** — le dossier local `images/` est ignoré par Git (`.gitignore`).
 
-- une bannière large dans le hero (`.img-ph.wide`) ;
-- une vignette en tête de chacune des 3 cartes du processus (`.img-ph.card-top`).
+Chaque `<img>` est posée dans un conteneur `.img-ph` qui la recadre automatiquement (`object-fit:cover`) : bannière large du hero (`.img-ph.wide`) et vignette en tête des 3 cartes du processus (`.img-ph.card-top`). Les avatars des fondateurs utilisent `.avatar`.
 
-Pour remplacer un placeholder par une vraie image, il suffit d'insérer une balise `<img>` à l'intérieur du bloc :
-
-```html
-<div class="img-ph wide">
-  <img src="images/hero.jpg" alt="Entrepôt et conteneurs" />
-</div>
-```
-
-L'image couvre automatiquement le cadre (`object-fit:cover`). Formats conseillés : `.webp` ou `.jpg` optimisés. Une classe `.img-ph.founder` (avatar rond 84px) est aussi disponible si tu veux remplacer les initiales des fondateurs par des photos.
+Pour changer une image, il suffit de remplacer l'URL correspondante dans `index.html`.
 
 ## Développement
 
