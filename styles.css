@@ -62,23 +62,17 @@ h1 .hl{background:linear-gradient(120deg,var(--green),var(--gold) 60%,var(--red)
 .stat b.emoji{font-size:2.1rem;line-height:1}
 .stat span{font-size:.85rem;color:var(--muted);display:block;margin-top:6px}
 
-/* Image placeholders (à remplacer par de vraies images) */
+/* Images */
 .img-ph{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#f1ede4,#faf8f4);border:2px dashed #d9d2c4;border-radius:16px;color:var(--muted);font-size:.85rem;font-weight:600;overflow:hidden}
-.img-ph>span{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;max-width:90%}
-.img-ph .ph-emoji{font-size:1.4rem}
 .img-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .img-ph:has(img){border:0;background:none}
 .img-ph.wide{position:relative;z-index:1;aspect-ratio:16/7;width:100%;margin-top:44px;border-radius:24px;box-shadow:var(--shadow)}
 .img-ph.card-top{aspect-ratio:16/9;width:100%;margin-bottom:16px;border-radius:12px}
-.img-ph.founder{width:84px;height:84px;border-radius:50%;margin:0 auto 16px;border-width:2px}
-.img-ph.founder>span{padding:0;font-size:1.5rem}
 
 /* Value cards */
 .values{position:relative;z-index:1;padding:20px 0 8px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
-.ic{width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
-.ic.a{background:rgba(17,138,78,.12)}.ic.b{background:rgba(242,180,24,.16)}.ic.c{background:rgba(210,59,50,.12)}
 .card h3{font-size:1.12rem;margin-bottom:6px}
 .card p{font-size:.94rem;color:var(--muted)}
 

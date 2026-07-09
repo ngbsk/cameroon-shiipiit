@@ -6,3 +6,6 @@ Thumbs.db
 .idea/
 # Logs / divers
 *.log
+
+# Images (hébergées sur Cloudflare, non versionnées)
+images/
