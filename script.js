@@ -27,6 +27,18 @@ const hdr = document.getElementById('hdr');
 const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 8);
 onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
 
+// Mobile burger menu
+const menuBtn = document.getElementById('menuBtn');
+const setMenu = (open) => {
+  hdr.classList.toggle('menu-open', open);
+  menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+};
+menuBtn.addEventListener('click', ()=> setMenu(!hdr.classList.contains('menu-open')));
+// Close on link tap, on Escape, and when growing back to desktop
+document.querySelectorAll('#navLinks a').forEach(a=> a.addEventListener('click', ()=> setMenu(false)));
+document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') setMenu(false); });
+window.addEventListener('resize', ()=>{ if(window.innerWidth > 820) setMenu(false); });
+
 // Reveal on intersection (with stagger for children)
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{
