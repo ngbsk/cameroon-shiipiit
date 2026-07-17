@@ -10,3 +10,10 @@ Thumbs.db
 
 # Images (hébergées sur Cloudflare, non versionnées)
 images/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
