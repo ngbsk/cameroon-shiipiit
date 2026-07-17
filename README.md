@@ -1,6 +1,6 @@
 # cameroon.shiipiit — site vitrine
 
-Site vitrine one-page de **cameroon.shiipiit** : sourcing tech & électroménager depuis la Chine vers le Cameroun (panneaux solaires, électroménager, téléphones, composants), avec service après-vente. Bilingue **FR / EN**.
+Site vitrine one-page de **cameroon.shiipiit** : sourcing tech & électroménager depuis la Chine vers le Cameroun (énergie solaire, électroménager, téléphones, composants tech, mobilier, habillement), avec service après-vente. Bilingue **FR / EN**.
 
 ## Fichiers
 
